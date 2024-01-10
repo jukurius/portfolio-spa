@@ -1,0 +1,19 @@
+.scroll_down_indicator::before {
+  animation: bounce 1s ease infinite;
+  bottom: 0;
+  color: #fff;
+  content: "╲╱";
+  font-size: 2rem;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
