@@ -46,18 +46,14 @@ const MainNavbar = () => {
         </div>
         <ul className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/work">Work</Link>
           </li>
           <li>
-            <Link href="/">Work</Link>
+            <Link href="/services">Services</Link>
           </li>
           <li>
-            <Link href="/">Services</Link>
+            <Link href="/about-me">About Me</Link>
           </li>
-          <li>
-            <Link href="/">About Me</Link>
-          </li>
-          {/* Add more menu items as needed */}
         </ul>
       </div>
     </nav>

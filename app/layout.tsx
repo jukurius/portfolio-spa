@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
-// import { Inter, IBM_Plex_Mono } from "next/font/google";
 import { inter } from "@/utils/fonts";
 import "./globals.css";
 import MainNavbar from "@/components/navbar/main-navbar";
-
-// const inter = Inter({
-//   subsets: ["latin"],
-//   variable: "--font-inter",
-// });
-// const ibmPlexMono = IBM_Plex_Mono({
-//   subsets: ["latin"],
-//   weight: ["300", "400", "500"],
-//   variable: "--font-ibm-plex-mono",
-// });
+import MainFooter from "@/components/footer/main-footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,6 +19,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <MainNavbar />
         {children}
+        <MainFooter />
       </body>
     </html>
   );
