@@ -67,13 +67,13 @@ const Hero = () => {
                 : {}
             }
           >
-            Noah Alwood is a passionate software developer with a knack for
-            turning lines of code into digital wonders. With a background in
-            computer science and a flair for creative problem-solving, Noah has
-            been on a relentless quest to make the digital world a better place.
-            &nbsp;When he's not immersed in code, you'll find Noah exploring the
-            great outdoors or playing Soccer and Kick box, finding harmony not
-            only in software but in life's diverse melodies.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            illum repellendus, excepturi assumenda tenetur iste deleniti, id
+            fugit a dolorum quae earum ipsa! Obcaecati voluptatem culpa tempora
+            voluptas debitis quibusdam accusamus iure facilis amet, sint,
+            temporibus facere repudiandae ut doloribus mollitia ipsa esse, qui
+            praesentium ducimus quasi sit minus! Error, eos iste? Non totam
+            magnam cupiditate? Facilis fuga incidunt quaerat!
           </h2>
         </div>
       </div>
