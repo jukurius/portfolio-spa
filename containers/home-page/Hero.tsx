@@ -21,22 +21,19 @@ const Hero = () => {
       window.removeEventListener("scroll", updateTopPosition);
     };
   }, []);
-  console.log(topPosition);
+
   return (
     <section
       id={styles.hero_wrapper}
       ref={componentRef}
       style={
-        topPosition !== null && topPosition < -650
+        topPosition !== null && topPosition < -296
           ? { backgroundColor: "#fff" }
           : { backgroundColor: "black" }
       }
     >
       <div className={styles.hero_container}>
         <h1 className={`${styles.hero_title}`}>
-          {/* <span
-            className={`${styles.hero_title_code_mark}`}
-          ></span>{" "} */}
           I am Juuso, and i engineer code that shapes destinies{" "}
           <span
             className={`${styles.hero_title_code_mark} ${ibmPlexMono.className}`}
@@ -48,14 +45,15 @@ const Hero = () => {
           <div
             className={`${styles.hero_short_info_item} ${ibmPlexMono.className}`}
           >
-            Noah Alwood is a passionate software developer with a knack for
-            turning lines of code into digital wonders.
+            Juuso Kurkinen, a dedicated software developer, transforms code into
+            digital marvels with passion and precision.
           </div>
           <div
             className={`${styles.hero_short_info_item} ${ibmPlexMono.className}`}
           >
-            I once wrote a program that generated random acts of kindness
-            &nbsp;to perform each day,it was a wholesome experience.
+            Juuso is embarking on the exciting journey of their &nbsp;
+            programming career, eager to learn and make a mark in the digital
+            realm.
           </div>
         </div>
         <div className={styles.hero_scroll_indicator_container}>
@@ -64,7 +62,7 @@ const Hero = () => {
         <div className={styles.hero_subtitle_container}>
           <h2
             style={
-              topPosition !== null && topPosition < -650
+              topPosition !== null && topPosition < -296
                 ? { color: "black" }
                 : {}
             }
