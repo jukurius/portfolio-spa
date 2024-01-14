@@ -11,12 +11,7 @@ const Hero = ({ textColor }: HeroProps) => {
     <section id={styles.hero_wrapper}>
       <div className={styles.hero_container}>
         <h1 className={`${styles.hero_title}`}>
-          I am Juuso, and i engineer code that shapes destinies{" "}
-          <span
-            className={`${styles.hero_title_code_mark} ${ibmPlexMono.className}`}
-          >
-            {"</>"}
-          </span>
+          I am Juuso, and i engineer code that shapes destinies
         </h1>
         <div className={styles.hero_short_info_container}>
           <div
