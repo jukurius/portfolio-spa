@@ -21,13 +21,18 @@
     transition: $height-transition;
 
     .logo a {
-      color: $nav-font-color;
+      color: "$nav-font-color";
       text-decoration: none;
       font-size: 1.5rem;
       font-weight: bold;
       opacity: 1;
       visibility: visible;
       transition: $opacity-transition, $visibility-transition, $color-transition;
+
+      img {
+        width: 60px;
+        height: auto;
+      }
 
       &:hover {
         color: $nav-font-color-hover;

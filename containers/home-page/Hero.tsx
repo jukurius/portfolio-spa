@@ -1,37 +1,14 @@
-"use client";
-import React, { useRef, useEffect, useState } from "react";
 import styles from "./hero.module.scss";
 import { ibmPlexMono } from "@/utils/fonts";
 import ScrollDownIndicator from "./scroll-down-indicator";
 
-const Hero = () => {
-  const [topPosition, setTopPosition] = useState<number | null>(null);
-  const componentRef = useRef<HTMLDivElement>(null);
+interface HeroProps {
+  textColor: string;
+}
 
-  useEffect(() => {
-    const updateTopPosition = () => {
-      if (componentRef.current) {
-        const rect = componentRef.current.getBoundingClientRect();
-        setTopPosition(rect.top);
-      }
-    };
-    updateTopPosition();
-    window.addEventListener("scroll", updateTopPosition);
-    return () => {
-      window.removeEventListener("scroll", updateTopPosition);
-    };
-  }, []);
-
+const Hero = ({ textColor }: HeroProps) => {
   return (
-    <section
-      id={styles.hero_wrapper}
-      ref={componentRef}
-      style={
-        topPosition !== null && topPosition < -296
-          ? { backgroundColor: "#fff" }
-          : { backgroundColor: "black" }
-      }
-    >
+    <section id={styles.hero_wrapper}>
       <div className={styles.hero_container}>
         <h1 className={`${styles.hero_title}`}>
           I am Juuso, and i engineer code that shapes destinies{" "}
@@ -60,13 +37,7 @@ const Hero = () => {
           <ScrollDownIndicator />
         </div>
         <div className={styles.hero_subtitle_container}>
-          <h2
-            style={
-              topPosition !== null && topPosition < -296
-                ? { color: "black" }
-                : {}
-            }
-          >
+          <h2 style={{ color: textColor }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
             illum repellendus, excepturi assumenda tenetur iste deleniti, id
             fugit a dolorum quae earum ipsa! Obcaecati voluptatem culpa tempora

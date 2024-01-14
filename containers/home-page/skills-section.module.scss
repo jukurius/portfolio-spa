@@ -1,7 +1,12 @@
 @import "../../assets/scss/variables/variables.scss";
 $scroller-gap: 6em;
+$scroller-gap-mobile: 1em;
 
 #skills_section_wrapper {
+  padding: 40px 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+
   h2 {
     text-align: center;
     color: var(--white);
@@ -10,6 +15,14 @@ $scroller-gap: 6em;
     margin-bottom: 0px;
     font-weight: 500;
     line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: $h1-tablet-font-size;
+    }
+
+    @media (max-width: 490px) {
+      font-size: $h1-mobile-font-size;
+    }
   }
 
   p {
@@ -18,10 +31,19 @@ $scroller-gap: 6em;
     letter-spacing: 0.7px;
     text-align: center;
   }
+
   .skills_section_wrapper_inner {
     margin-top: 80px;
     width: 100vw;
     mask: linear-gradient(90deg, transparent, white 2%, white 98%, transparent);
+
+    @media (max-width: 768px) {
+      margin-top: 60px;
+    }
+
+    @media (max-width: 490px) {
+      margin-top: 18px;
+    }
 
     .skills_section_container {
       padding-block: 2em;
@@ -32,7 +54,15 @@ $scroller-gap: 6em;
       .skills_section_item {
         .skills_section_img {
           width: 100px;
-          height: 100px;
+          height: auto;
+
+          @media (max-width: 768px) {
+            width: 86px;
+          }
+
+          @media (max-width: 490px) {
+            width: 60px;
+          }
         }
       }
     }
@@ -46,11 +76,21 @@ $scroller-gap: 6em;
     .skills_section_container {
     width: max-content;
     animation: scroll 40s linear infinite;
+
+    @media (max-width: 490px) {
+      animation: scroll-mobile 40s linear infinite;
+    }
   }
 }
 
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - $scroller-gap / 2));
+  }
+}
+
+@keyframes scroll-mobile {
+  to {
+    transform: translate(calc(-50% - $scroller-gap-mobile / 2));
   }
 }

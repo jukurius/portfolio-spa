@@ -6,28 +6,41 @@ import instagramIcon from "@/assets/images/footer/instagram.svg";
 import twitterIcon from "@/assets/images/footer/twitter.svg";
 import githubIcon from "@/assets/images/footer/github.svg";
 import Image from "next/image";
+import Logo from "@/assets/images/logo-black.png";
 
 const MainFooter = () => {
   return (
     <footer id={styles.footer_wrapper}>
       <div className={styles.footer_row_top}>
         <div className={styles.footer_row_content}>
-          <h3>Logo section</h3>
+          <Image
+            className={styles.footer_logo}
+            src={Logo}
+            alt="Site Logo"
+            width={200}
+            height={200}
+          />
+          <p className={styles.logo_text}>
+            “Transforming Visions into Reality by Turning Lines of Code into
+            Masterpieces…”
+          </p>
         </div>
-        <div className={styles.footer_row_content}>
+        <div
+          className={`${styles.footer_row_content} ${styles.footer_navigation} `}
+        >
           <h3>Navigation</h3>
           <ul className={styles.footer_menu}>
             <li className={styles.footer_menu_item}>
-              <Link href="/">Home</Link>
+              <Link href="/">Back to top</Link>
             </li>
             <li className={styles.footer_menu_item}>
-              <Link href="/">Work</Link>
+              <Link href="/work">Work</Link>
             </li>
             <li className={styles.footer_menu_item}>
-              <Link href="/">Services</Link>
+              <Link href="/services">Services</Link>
             </li>
             <li className={styles.footer_menu_item}>
-              <Link href="/">About Me</Link>
+              <Link href="/about-me">About Me</Link>
             </li>
           </ul>
         </div>

@@ -15,7 +15,11 @@ import sass from "@/assets/images/sass.png";
 
 const images = [js, atom, bs, cSharp, css, git, html, java, mysql, sass];
 
-const SkillsSection = () => {
+interface SkillsSectionProps {
+  textColor: string;
+}
+
+const SkillsSection = ({ textColor }: SkillsSectionProps) => {
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -36,8 +40,8 @@ const SkillsSection = () => {
 
   return (
     <section id={styles.skills_section_wrapper}>
-      <h2>Development Toolbox</h2>
-      <p>
+      <h2 style={{ color: textColor }}>Development Toolbox</h2>
+      <p style={{ color: textColor }}>
         Navigating the Digital Landscape Where Innovation Meets Technology By
         Unleashing the Power of Code.
       </p>

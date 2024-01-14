@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "@/assets/scss/components/main-navbar.module.scss";
+import Image from "next/image";
+import Logo from "@/assets/images/logo-white.png";
 
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +34,9 @@ const MainNavbar = () => {
         }`}
       >
         <div className={styles.logo}>
-          <Link href="/">Logo</Link>
+          <Link href="/">
+            <Image src={Logo} alt="Site logo white" width={100} height={100} />
+          </Link>
         </div>
         <div
           className={`${styles.menu_burger} ${
