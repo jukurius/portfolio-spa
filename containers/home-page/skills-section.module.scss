@@ -13,7 +13,6 @@ $scroller-gap-mobile: 1em;
     font-size: $h1-desktop-font-size;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-weight: 500;
     line-height: 1.2;
 
     @media (max-width: 768px) {
@@ -55,6 +54,7 @@ $scroller-gap-mobile: 1em;
         .skills_section_img {
           width: 100px;
           height: auto;
+          object-fit: cover;
 
           @media (max-width: 768px) {
             width: 86px;
