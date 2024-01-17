@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "@/assets/scss/components/contact-form.module.scss";
+import arrowRight from "@/assets/images/arrow-right.svg";
+import Image from "next/image";
 
 const ContactForm = () => {
   return (
@@ -12,11 +14,14 @@ const ContactForm = () => {
       </p>
       <form action="">
         <label htmlFor="">Hi, my email is</label>
-        <input type="text" placeholder="your@email" />
+        <input type="email" placeholder="your@email" />
         <label htmlFor="">i'm writing about</label>
         <input type="text" placeholder="your subject" />
         <label htmlFor="">Looking forward to talk to you.</label>
-        <button>Send</button>
+        <button>
+          Send{" "}
+          <Image src={arrowRight} alt="Right arrow" width={60} height={60} />
+        </button>
       </form>
     </section>
   );
