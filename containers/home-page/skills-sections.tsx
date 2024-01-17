@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useLayoutEffect, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import styles from "./skills-section.module.scss";
 import Image from "next/image";
 import js from "@/assets/images/js.png";
@@ -12,6 +12,7 @@ import html from "@/assets/images/html.png";
 import java from "@/assets/images/java.png";
 import mysql from "@/assets/images/mysql.png";
 import sass from "@/assets/images/sass.png";
+import LinkComponent from "@/components/Link";
 
 const images = [js, atom, bs, cSharp, css, git, html, java, mysql, sass];
 
@@ -59,6 +60,9 @@ const SkillsSection = ({ textColor }: SkillsSectionProps) => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className={styles.link_container}>
+        <LinkComponent to="/work" text="Read more" />
       </div>
     </section>
   );

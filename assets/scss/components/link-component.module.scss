@@ -1,0 +1,22 @@
+@import "../variables/variables.scss";
+
+.link_component {
+  border: 1px solid #d0d0d0;
+  border-radius: 1000px;
+  padding: 20px 40px;
+  font-size: $h2-desktop-font-size;
+  transition: border 0.32s cubic-bezier(0.4, 0, 0.6, 1);
+
+  &:hover {
+    border: 1px solid #000;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 24px;
+    font-size: $h2-tablet-font-size;
+  }
+
+  @media (max-width: 490px) {
+    font-size: $h2-mobile-font-size;
+  }
+}

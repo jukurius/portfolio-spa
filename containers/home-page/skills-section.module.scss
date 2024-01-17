@@ -3,13 +3,10 @@ $scroller-gap: 6em;
 $scroller-gap-mobile: 1em;
 
 #skills_section_wrapper {
-  padding: 40px 25px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: 0 25px;
 
   h2 {
     text-align: center;
-    color: var(--white);
     font-size: $h1-desktop-font-size;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -79,6 +76,15 @@ $scroller-gap-mobile: 1em;
 
     @media (max-width: 490px) {
       animation: scroll-mobile 40s linear infinite;
+    }
+  }
+
+  .link_container {
+    text-align: center;
+    margin-top: 60px;
+    @media (max-width: 490px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
 }
