@@ -1,7 +1,12 @@
+import Index from "@/containers/about-page";
 import React from "react";
 
 const AboutMePage = () => {
-  return <div>AboutMePage</div>;
+  return (
+    <main>
+      <Index />
+    </main>
+  );
 };
 
 export default AboutMePage;

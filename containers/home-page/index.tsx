@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Hero from "./hero";
 import SkillsSection from "./skills-sections";
+import ContactForm from "@/components/contact-form/contact-form";
 import styles from "./index.module.scss";
 
 const Index = () => {
@@ -42,14 +43,15 @@ const Index = () => {
   }, []);
 
   return (
-    <main
+    <div
       className={styles.main}
       ref={componentRef}
       style={{ backgroundColor: bgColor }}
     >
       <Hero textColor={textColor} />
       <SkillsSection textColor={textColor} />
-    </main>
+      <ContactForm />
+    </div>
   );
 };
 

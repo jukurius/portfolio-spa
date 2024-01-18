@@ -1,17 +1,19 @@
 .main {
   position: relative;
-  top: -44px;
+  top: 120px;
   display: flex;
   flex-direction: column;
   gap: 180px;
   align-items: center;
-  padding: 48px 0;
+  padding: 48px 0 200px;
 
   @media (max-width: 768px) {
-    gap: 120px;
+    top: 100px;
+    gap: 160px;
   }
 
   @media (max-width: 490px) {
-    gap: 60px;
+    top: 80px;
+    gap: 120px;
   }
 }
