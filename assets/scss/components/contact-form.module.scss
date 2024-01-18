@@ -1,5 +1,7 @@
 @import "../variables/variables.scss";
 .contact_form_wrapper {
+  padding: 0 25px;
+
   h2 {
     font-size: $h1-desktop-font-size;
     text-align: center;
@@ -61,6 +63,8 @@
 
       @media (max-width: 490px) {
         font-size: $h2-mobile-font-size;
+        max-width: unset;
+        padding-left: 0;
       }
     }
 

@@ -41,11 +41,13 @@ const SkillsSection = ({ textColor }: SkillsSectionProps) => {
 
   return (
     <section id={styles.skills_section_wrapper}>
-      <h2 style={{ color: textColor }}>Development Toolbox</h2>
-      <p style={{ color: textColor }}>
-        Navigating the Digital Landscape Where Innovation Meets Technology By
-        Unleashing the Power of Code.
-      </p>
+      <div className={styles.skills_section_title_container}>
+        <h2 style={{ color: textColor }}>Development Toolbox</h2>
+        <p style={{ color: textColor }}>
+          Navigating the Digital Landscape Where Innovation Meets Technology By
+          Unleashing the Power of Code.
+        </p>
+      </div>
       <div ref={scrollerRef} className={styles.skills_section_wrapper_inner}>
         <ul className={styles.skills_section_container}>
           {images.map((item, index) => (

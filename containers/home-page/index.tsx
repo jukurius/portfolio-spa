@@ -43,7 +43,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main
+    <div
       className={styles.main}
       ref={componentRef}
       style={{ backgroundColor: bgColor }}
@@ -51,7 +51,7 @@ const Index = () => {
       <Hero textColor={textColor} />
       <SkillsSection textColor={textColor} />
       <ContactForm />
-    </main>
+    </div>
   );
 };
 

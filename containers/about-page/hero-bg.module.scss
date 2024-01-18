@@ -1,0 +1,10 @@
+.hero_bg {
+  position: absolute;
+  top: -120px;
+  left: 0;
+  right: 0;
+  height: 880px;
+  background-color: #4db99a;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
