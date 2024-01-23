@@ -7,10 +7,12 @@ import Logo from "@/assets/images/logo-white.png";
 
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [innerWidth, setInnerWidth] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
       window.innerWidth > 768 && setIsOpen(false);
+      setInnerWidth(window.innerWidth);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -21,6 +23,12 @@ const MainNavbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleMobileLinkClick = () => {
+    if (innerWidth <= 768) {
+      setIsOpen(!isOpen);
+    }
   };
 
   return (
@@ -50,13 +58,14 @@ const MainNavbar = () => {
         </div>
         <ul className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
           <li>
-            <Link href="/work">Work</Link>
+            <Link onClick={handleMobileLinkClick} href="/development-skills">
+              Development Skills
+            </Link>
           </li>
           <li>
-            <Link href="/services">Services</Link>
-          </li>
-          <li>
-            <Link href="/about-me">About Me</Link>
+            <Link onClick={handleMobileLinkClick} href="/about-me">
+              About Me
+            </Link>
           </li>
         </ul>
       </div>

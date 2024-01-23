@@ -42,7 +42,7 @@ const Hero = () => {
             </p>
           </TimeLineDot>
           <TimeLineDot
-            position={windowWidth > 768 ? { top: 200 } : { top: 150 }}
+            position={windowWidth > 768 ? { top: 200 } : { top: 160 }}
             variant="straight_right"
             direction="right"
           >
@@ -52,7 +52,7 @@ const Hero = () => {
             </div>
           </TimeLineDot>
           <TimeLineDot
-            position={{ top: 220 }}
+            position={{ top: 250 }}
             variant="right_down"
             direction="left_down"
           >
@@ -60,7 +60,7 @@ const Hero = () => {
             <p>I completed my military service.</p>
           </TimeLineDot>
           <TimeLineDot
-            position={windowWidth > 768 ? { top: 340 } : { top: 360 }}
+            position={windowWidth > 768 ? { top: 340 } : { top: 340 }}
             variant="straight_right"
             direction="right"
           >
@@ -83,7 +83,7 @@ const Hero = () => {
             </p>
           </TimeLineDot>
           <TimeLineDot
-            position={windowWidth > 768 ? { top: 580 } : { top: 620 }}
+            position={windowWidth > 768 ? { top: 580 } : { top: 640 }}
             variant="straight_right"
             direction="right"
           >
@@ -91,7 +91,7 @@ const Hero = () => {
             <p>I was accepted to the school and began full-time studies.</p>
           </TimeLineDot>
           <TimeLineDot
-            position={windowWidth > 768 ? { top: 640 } : { top: 700 }}
+            position={windowWidth > 768 ? { top: 640 } : { top: 740 }}
             variant="right_down"
             direction="left_down"
           >
@@ -102,7 +102,7 @@ const Hero = () => {
             </p>
           </TimeLineDot>
           <TimeLineDot
-            position={windowWidth > 768 ? { top: 800 } : { top: 900 }}
+            position={windowWidth > 768 ? { top: 800 } : { top: 880 }}
             variant="straight_right"
             direction="right"
           >
@@ -113,7 +113,7 @@ const Hero = () => {
             </p>
           </TimeLineDot>
           <TimeLineDot
-            position={windowWidth > 768 ? { top: 860 } : { top: 1050 }}
+            position={windowWidth > 768 ? { top: 860 } : { top: 1040 }}
             variant="straight_left"
             direction="left"
           >
@@ -124,7 +124,7 @@ const Hero = () => {
             </p>
           </TimeLineDot>
           <TimeLineDot
-            position={windowWidth > 768 ? { top: 1000 } : { top: 1180 }}
+            position={windowWidth > 768 ? { top: 1000 } : { top: 1160 }}
             variant="straight_left"
             direction="left"
           >

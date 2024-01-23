@@ -4,6 +4,7 @@ import Hero from "./hero";
 import SkillsSection from "./skills-sections";
 import ContactForm from "@/components/contact-form/contact-form";
 import styles from "./index.module.scss";
+import { createClient } from "contentful";
 
 const Index = () => {
   const [bgColor, setBgColor] = useState<string>("#000000");
@@ -54,5 +55,24 @@ const Index = () => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const spaceId = process.env.CONTENTFUL_SPACE_ID!;
+  const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN!;
+  const client = createClient({
+    space: spaceId,
+    accessToken: accessToken,
+  });
+
+  const res = await client.getEntries({ content_type: "yourContentType" });
+
+  console.log(res);
+
+  return {
+    props: {
+      entries: res.items,
+    },
+  };
+}
 
 export default Index;
