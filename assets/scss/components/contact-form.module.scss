@@ -1,6 +1,7 @@
 @import "../variables/variables.scss";
 .contact_form_wrapper {
   padding: 0 25px;
+  width: 100%;
 
   h2 {
     font-size: $h1-desktop-font-size;
@@ -28,6 +29,7 @@
 
   form {
     max-width: 1200px;
+    margin: 0 auto;
     label {
       font-size: $h2-desktop-font-size;
       font-weight: 300;

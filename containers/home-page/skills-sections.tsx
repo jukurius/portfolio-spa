@@ -18,9 +18,10 @@ const images = [js, atom, bs, cSharp, css, git, html, java, mysql, sass];
 
 interface SkillsSectionProps {
   textColor: string;
+  showLink?: boolean;
 }
 
-const SkillsSection = ({ textColor }: SkillsSectionProps) => {
+const SkillsSection = ({ textColor, showLink }: SkillsSectionProps) => {
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -63,9 +64,11 @@ const SkillsSection = ({ textColor }: SkillsSectionProps) => {
           ))}
         </ul>
       </div>
-      <div className={styles.link_container}>
-        <LinkComponent to="/work" text="Read more" />
-      </div>
+      {showLink && (
+        <div className={styles.link_container}>
+          <LinkComponent to="/work" text="Read more" />
+        </div>
+      )}
     </section>
   );
 };
