@@ -1,7 +1,12 @@
 import React from "react";
+import Index from "@/containers/skills-page";
 
 const WorkPage = () => {
-  return <div>WorkPage</div>;
+  return (
+    <main>
+      <Index />
+    </main>
+  );
 };
 
 export default WorkPage;
