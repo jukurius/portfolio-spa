@@ -67,6 +67,15 @@ const MainNavbar = () => {
               About Me
             </Link>
           </li>
+          <li>
+            <Link
+              className={styles.btn_styled_link}
+              onClick={handleMobileLinkClick}
+              href="/about-me"
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

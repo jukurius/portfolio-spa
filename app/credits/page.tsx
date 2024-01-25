@@ -70,6 +70,14 @@ const CreditsPage = () => {
             Bootstrap icons created by Freepik - Flaticon
           </a>
         </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/typescript"
+            title="typescript icons"
+          >
+            Typescript icons created by Freepik - Flaticon
+          </a>
+        </li>
       </ul>
     </main>
   );

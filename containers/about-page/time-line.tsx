@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { HeroBg } from "./hero-bg";
-import styles from "./hero.module.scss";
+import styles from "./time-line.module.scss";
 import TimeLineDot from "./time_line_dot";
 
-const Hero = () => {
+const TimeLine = () => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
   useEffect(() => {
     const handleResize = () => {
@@ -138,4 +138,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default TimeLine;

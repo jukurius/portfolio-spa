@@ -12,9 +12,22 @@ import html from "@/assets/images/html.png";
 import java from "@/assets/images/java.png";
 import mysql from "@/assets/images/mysql.png";
 import sass from "@/assets/images/sass.png";
+import typeScript from "@/assets/images/typescript.png";
 import LinkComponent from "@/components/Link";
 
-const images = [js, atom, bs, cSharp, css, git, html, java, mysql, sass];
+const images = [
+  { img: js, alt: "JavaScript logo" },
+  { img: typeScript, alt: "TypeScript logo" },
+  { img: atom, alt: "React Logo" },
+  { img: bs, alt: "Bootstrap logo" },
+  { img: cSharp, alt: "C# logo" },
+  { img: css, alt: "CSS 3 logo" },
+  { img: git, alt: "Git logo" },
+  { img: html, alt: "HTML logo" },
+  { img: java, alt: "Java logo" },
+  { img: mysql, alt: "MySQL logo" },
+  { img: sass, alt: "SASS logo" },
+];
 
 interface SkillsSectionProps {
   textColor: string;
@@ -55,8 +68,8 @@ const SkillsSection = ({ textColor, showLink }: SkillsSectionProps) => {
             <li className={styles.skills_section_item} key={index}>
               <Image
                 className={styles.skills_section_img}
-                src={item.src}
-                alt="js image"
+                src={item?.img}
+                alt={item?.alt}
                 width={240}
                 height={240}
               />
@@ -66,7 +79,7 @@ const SkillsSection = ({ textColor, showLink }: SkillsSectionProps) => {
       </div>
       {showLink && (
         <div className={styles.link_container}>
-          <LinkComponent to="/work" text="Read more" />
+          <LinkComponent to="/development-skills" text="Read more" />
         </div>
       )}
     </section>
