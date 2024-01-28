@@ -5,7 +5,11 @@ import SkillsSection from "./skills-sections";
 import ContactForm from "@/components/contact-form/contact-form";
 import styles from "./index.module.scss";
 
-const Index = () => {
+interface IndexProps {
+  pageData: any;
+}
+
+const Index = ({ pageData }: IndexProps) => {
   const [bgColor, setBgColor] = useState<string>("#000000");
   const [textColor, setTextColor] = useState<string>("#fff");
   const componentRef = useRef<HTMLDivElement>(null);
@@ -49,7 +53,7 @@ const Index = () => {
       style={{ backgroundColor: bgColor }}
     >
       <Hero textColor={textColor} />
-      <SkillsSection textColor={textColor} showLink={true} />
+      <SkillsSection textColor={textColor} showLink={true} data={pageData} />
       <ContactForm />
     </div>
   );

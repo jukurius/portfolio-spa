@@ -1,10 +1,12 @@
 import React from "react";
 import Index from "@/containers/skills-page";
+import { getAllProgrammingSkills } from "@/libs/api";
 
-const WorkPage = () => {
+const WorkPage = async () => {
+  const pageData = await getAllProgrammingSkills();
   return (
     <main>
-      <Index />
+      <Index pageData={pageData} />
     </main>
   );
 };
