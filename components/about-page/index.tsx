@@ -1,7 +1,7 @@
-import ContactForm from "@/components/contact-form/contact-form";
+import ContactForm from "@/components/contact-form";
 import styles from "./index.module.scss";
-import TimeLine from "./time-line";
-import Hobbies from "./hobbies";
+import TimeLine from "../time-line";
+import Hobbies from "../hobbies";
 
 const Index = () => {
   return (

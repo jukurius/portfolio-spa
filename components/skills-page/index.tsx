@@ -1,7 +1,7 @@
-import ContactForm from "@/components/contact-form/contact-form";
-import SkillsSection from "../home-page/skills-sections";
+import ContactForm from "@/components/contact-form";
+import SkillsSection from "../skills-sections";
 import styles from "./index.module.scss";
-import ProgrammingSkills from "./programming-skills";
+import ProgrammingSkills from "../programming-skills";
 
 interface IndexProps {
   pageData: any;

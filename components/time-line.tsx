@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { HeroBg } from "./hero-bg";
-import styles from "./time-line.module.scss";
+import { HeroBg } from "./about-page/hero-bg";
+import styles from "@/assets/scss/components/time-line.module.scss";
 import TimeLineDot from "./time_line_dot";
 
 const TimeLine = () => {

@@ -1,6 +1,6 @@
 import styles from "./hero.module.scss";
 import { ibmPlexMono } from "@/utils/fonts";
-import ScrollDownIndicator from "./scroll-down-indicator";
+import ScrollDownIndicator from "@/components/scroll-down-indicator";
 
 interface HeroProps {
   textColor: string;

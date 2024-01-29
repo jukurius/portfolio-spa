@@ -1,5 +1,5 @@
-import styles from "./programming-skills.module.scss";
-import SkillsGrid from "./skills-grid";
+import styles from "@/assets/scss/components/programming-skills.module.scss";
+import SkillsGrid from "@/components/skills-grid";
 
 interface ProgrammingSkillsProps {
   data: any;

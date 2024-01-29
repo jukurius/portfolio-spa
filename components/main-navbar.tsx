@@ -8,6 +8,18 @@ import Logo from "@/assets/images/logo-white.png";
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [innerWidth, setInnerWidth] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 0 ? setIsScrolled(true) : setIsScrolled(false);
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {

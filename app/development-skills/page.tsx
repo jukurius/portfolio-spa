@@ -1,5 +1,5 @@
 import React from "react";
-import Index from "@/containers/skills-page";
+import Index from "@/components/skills-page";
 import { getAllProgrammingSkills, getAllSkillbars } from "@/libs/api";
 
 const WorkPage = async () => {

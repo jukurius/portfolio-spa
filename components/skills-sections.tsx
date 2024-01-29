@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useEffect } from "react";
-import styles from "./skills-section.module.scss";
+import styles from "@/assets/scss/components/skills-section.module.scss";
 import Image from "next/image";
 import LinkComponent from "@/components/Link";
 

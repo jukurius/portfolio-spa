@@ -1,4 +1,4 @@
-import Index from "@/containers/about-page";
+import Index from "@/components/about-page";
 
 const AboutMePage = () => {
   return (

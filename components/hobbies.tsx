@@ -1,5 +1,5 @@
 "use client";
-import styles from "./hobbies.module.scss";
+import styles from "@/assets/scss/components/hobbies.module.scss";
 import bass from "@/assets/images/hobbies/bass.jpg";
 import drums from "@/assets/images/hobbies/drums.jpg";
 import coding from "@/assets/images/hobbies/coding.jpg";
