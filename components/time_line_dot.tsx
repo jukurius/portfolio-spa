@@ -1,5 +1,5 @@
 import React, { CSSProperties, ReactNode } from "react";
-import styles from "./time-line-dot.module.scss";
+import styles from "@/assets/scss/components/time-line-dot.module.scss";
 
 interface TimeLineDotProps {
   position?: CSSProperties;

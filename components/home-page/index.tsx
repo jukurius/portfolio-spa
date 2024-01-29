@@ -1,8 +1,8 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import Hero from "./hero";
-import SkillsSection from "./skills-sections";
-import ContactForm from "@/components/contact-form/contact-form";
+import SkillsSection from "../skills-sections";
+import ContactForm from "@/components/contact-form";
 import styles from "./index.module.scss";
 
 interface IndexProps {

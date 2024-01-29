@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { HeroBg } from "./hero-bg";
-import styles from "./time-line.module.scss";
+import { HeroBg } from "./about-page/hero-bg";
+import styles from "@/assets/scss/components/time-line.module.scss";
 import TimeLineDot from "./time_line_dot";
 
 const TimeLine = () => {
@@ -79,7 +79,7 @@ const TimeLine = () => {
             <h2>Early 2020</h2>
             <p>
               I applied to Savonia University of Applied Sciences to study for a
-              Bachelor's degree in Computer Engineering.
+              Bachelor&apos;s degree in Computer Engineering.
             </p>
           </TimeLineDot>
           <TimeLineDot

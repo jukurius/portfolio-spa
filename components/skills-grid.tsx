@@ -1,4 +1,4 @@
-import styles from "./skills-grid.module.scss";
+import styles from "@/assets/scss/components/skills-grid.module.scss";
 
 interface SkillsGridProps {
   data: any[];

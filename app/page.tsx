@@ -1,4 +1,4 @@
-import Index from "@/containers/home-page";
+import Index from "@/components/home-page";
 import { getAllProgrammingSkills } from "@/libs/api";
 
 export default async function Home() {
