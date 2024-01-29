@@ -79,7 +79,7 @@ const TimeLine = () => {
             <h2>Early 2020</h2>
             <p>
               I applied to Savonia University of Applied Sciences to study for a
-              Bachelor's degree in Computer Engineering.
+              Bachelor&apos;s degree in Computer Engineering.
             </p>
           </TimeLineDot>
           <TimeLineDot
