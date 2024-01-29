@@ -53,7 +53,11 @@ const Index = ({ pageData }: IndexProps) => {
       style={{ backgroundColor: bgColor }}
     >
       <Hero textColor={textColor} />
-      <SkillsSection textColor={textColor} showLink={true} data={pageData} />
+      <SkillsSection
+        textColor={textColor}
+        showLink={true}
+        data={pageData?.programmingSkills}
+      />
       <ContactForm />
     </div>
   );

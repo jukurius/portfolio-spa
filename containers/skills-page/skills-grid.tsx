@@ -8,7 +8,7 @@ const SkillsGrid = ({ data }: SkillsGridProps) => {
     <div className={styles.grid_container}>
       {data.map((item, index) => (
         <div key={index} className={styles.grid_item}>
-          <div className={styles.skill_label}>{item.language}</div>
+          <div className={styles.skill_label}>{item.title}</div>
           <div className={styles.skillbar}>
             <div
               className={styles.skillbar_percentage}
