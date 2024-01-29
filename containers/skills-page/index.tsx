@@ -10,8 +10,12 @@ interface IndexProps {
 const Index = ({ pageData }: IndexProps) => {
   return (
     <div className={styles.main}>
-      <ProgrammingSkills />
-      <SkillsSection textColor="black" showLink={false} data={pageData} />
+      <ProgrammingSkills data={(pageData as any)?.skillbars} />
+      <SkillsSection
+        textColor="black"
+        showLink={false}
+        data={pageData?.programmingSkills}
+      />
       <ContactForm />
     </div>
   );

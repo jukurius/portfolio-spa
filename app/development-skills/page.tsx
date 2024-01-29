@@ -1,12 +1,14 @@
 import React from "react";
 import Index from "@/containers/skills-page";
-import { getAllProgrammingSkills } from "@/libs/api";
+import { getAllProgrammingSkills, getAllSkillbars } from "@/libs/api";
 
 const WorkPage = async () => {
   const pageData = await getAllProgrammingSkills();
+  const skillbars = await getAllSkillbars();
+  const combinedData = { ...pageData, ...skillbars };
   return (
     <main>
-      <Index pageData={pageData} />
+      <Index pageData={combinedData} />
     </main>
   );
 };
