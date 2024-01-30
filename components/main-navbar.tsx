@@ -83,7 +83,7 @@ const MainNavbar = () => {
             <Link
               className={styles.btn_styled_link}
               onClick={handleMobileLinkClick}
-              href="/about-me"
+              href="?modal=true"
             >
               Contact
             </Link>

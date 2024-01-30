@@ -4,6 +4,7 @@ import { inter } from "@/utils/fonts";
 import "./globals.css";
 import MainNavbar from "@/components/main-navbar";
 import MainFooter from "@/components/main-footer";
+import Modal from "@/components/Modal";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <MainNavbar />
         {children}
         <MainFooter />
+        <Modal />
         <SpeedInsights />
       </body>
     </html>
