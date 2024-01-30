@@ -80,6 +80,7 @@
       font-size: $h2-desktop-font-size;
       margin-left: 40px;
       cursor: pointer;
+      transition: color 0.3s ease-in-out;
 
       @media (max-width: 768px) {
         font-size: $h2-tablet-font-size;
@@ -91,14 +92,19 @@
       }
 
       &:hover {
-        color: blue;
+        color: #0000ff;
+
+        img {
+          opacity: 1;
+        }
       }
 
       img {
+        opacity: 0;
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-        fill: blue !important;
+        transition: opacity 0.3s ease-in-out;
 
         @media (max-width: 768px) {
           width: 34px;

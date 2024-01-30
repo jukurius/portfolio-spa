@@ -11,7 +11,7 @@ const Hero = ({ textColor }: HeroProps) => {
     <section id={styles.hero_wrapper}>
       <div className={styles.hero_container}>
         <h1 className={`${styles.hero_title}`}>
-          I am Juuso, and i engineer code that shapes destinies
+          I am Juuso, and i engineer code that shapes destinies.
         </h1>
         <div className={styles.hero_short_info_container}>
           <div
@@ -33,13 +33,15 @@ const Hero = ({ textColor }: HeroProps) => {
         </div>
         <div className={styles.hero_subtitle_container}>
           <h2 style={{ color: textColor }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            illum repellendus, excepturi assumenda tenetur iste deleniti, id
-            fugit a dolorum quae earum ipsa! Obcaecati voluptatem culpa tempora
-            voluptas debitis quibusdam accusamus iure facilis amet, sint,
-            temporibus facere repudiandae ut doloribus mollitia ipsa esse, qui
-            praesentium ducimus quasi sit minus! Error, eos iste? Non totam
-            magnam cupiditate? Facilis fuga incidunt quaerat!
+            Juuso is a passionate programmer who enjoys solving problems and
+            continuously enhancing his skills in the realm of coding. He&apos;s
+            forte lies in Frontend development, but he also possess experience
+            in backend development and databases. With a background in computer
+            engineering, Juuso is well-versed in the intricacies of technology.
+            When not immersed in coding, you can find Juuso indulging in his
+            other interests, such as music or physical activities. This
+            individual is not just a coder; He brings a well-rounded set of
+            skills and interests to the table.
           </h2>
         </div>
       </div>
