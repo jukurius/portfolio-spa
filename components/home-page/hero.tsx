@@ -34,11 +34,11 @@ const Hero = ({ textColor }: HeroProps) => {
         <div className={styles.hero_subtitle_container}>
           <h2 style={{ color: textColor }}>
             Juuso is a passionate programmer who enjoys solving problems and
-            continuously enhancing his skills in the realm of coding. He's forte
-            lies in Frontend development, but he also possess experience in
-            backend development and databases. With a background in computer
+            continuously enhancing his skills in the realm of coding. He&apos;s
+            forte lies in Frontend development, but he also possess experience
+            in backend development and databases. With a background in computer
             engineering, Juuso is well-versed in the intricacies of technology.
-            When not immersed in coding, you can find Juuso indulging in their
+            When not immersed in coding, you can find Juuso indulging in his
             other interests, such as music or physical activities. This
             individual is not just a coder; He brings a well-rounded set of
             skills and interests to the table.
