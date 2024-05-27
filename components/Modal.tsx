@@ -1,12 +1,13 @@
 "use client";
 import { useSearchParams, usePathname } from "next/navigation";
+import { Suspense } from "react";
 import Link from "next/link";
 import styles from "@/assets/scss/components/modal.module.scss";
 import ContactForm from "./contact-form";
 import close from "@/assets/images/close.svg";
 import Image from "next/image";
 
-function Modal() {
+function ModalContent() {
   const searchParams = useSearchParams();
   const modal = searchParams.get("modal");
   const pathname = usePathname();
@@ -24,6 +25,14 @@ function Modal() {
         </dialog>
       )}
     </>
+  );
+}
+
+function Modal() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ModalContent />
+    </Suspense>
   );
 }
 
