@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio SPA
 
-## Getting Started
+Welcome to my portfolio SPA! This project showcases my work and skills using the [Next.js](https://nextjs.org/) framework and integrates with [Contentful](https://www.contentful.com/) as a headless CMS for content management.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Usage](#usage)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This portfolio site is built with the intention to provide a platform where I can showcase my projects, skills, and professional journey. The site is dynamic, fetching content from Contentful CMS, making it easy to update and manage without touching the codebase.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Dynamic Content:** Content is fetched from Contentful CMS, allowing easy updates and management.
+- **Responsive Design:** The website is fully responsive, providing an optimal viewing experience across all devices.
+- **Modern Technologies:** Built with Next.js for server-side rendering and fast performance.
+- **SEO Friendly:** Optimized for search engines to improve visibility and reach.
+- **Contact Form:** Integrated with Nodemailer for sending emails directly from the website.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend Framework:** [Next.js](https://nextjs.org/)
+- **Content Management:** [Contentful](https://www.contentful.com/)
+- **Email Handling:** [Nodemailer](https://nodemailer.com/)
+- **Styling:** SCSS Modules
+- **Deployment:** Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+This project is structured to make content management seamless via Contentful. You can add, edit, or remove content in Contentful, and it will automatically be reflected on the website.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The contact form on the website uses Nodemailer to handle email submissions. Ensure your email service credentials are correctly configured in the .env.local file.

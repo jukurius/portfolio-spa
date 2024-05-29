@@ -31,13 +31,10 @@ const MainFooter = () => {
           <h3>Navigation</h3>
           <ul className={styles.footer_menu}>
             <li className={styles.footer_menu_item}>
-              <Link href="/">Back to top</Link>
+              <Link href="/">Home</Link>
             </li>
             <li className={styles.footer_menu_item}>
-              <Link href="/work">Work</Link>
-            </li>
-            <li className={styles.footer_menu_item}>
-              <Link href="/services">Services</Link>
+              <Link href="/development-skills">Development skills</Link>
             </li>
             <li className={styles.footer_menu_item}>
               <Link href="/about-me">About Me</Link>

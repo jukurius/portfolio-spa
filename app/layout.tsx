@@ -5,6 +5,7 @@ import "./globals.css";
 import MainNavbar from "@/components/main-navbar";
 import MainFooter from "@/components/main-footer";
 import Modal from "@/components/Modal";
+import ReCaptchaWrapper from "./ReCaptchaWrapper";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <MainNavbar />
-        {children}
-        <MainFooter />
-        <Modal />
-        <SpeedInsights />
+        <ReCaptchaWrapper>
+          <MainNavbar />
+          {children}
+          <MainFooter />
+          <Modal />
+          <SpeedInsights />
+        </ReCaptchaWrapper>
       </body>
     </html>
   );

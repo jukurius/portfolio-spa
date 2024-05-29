@@ -1,0 +1,111 @@
+.modal_wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  overflow: auto;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 400ms ease 100ms backwards;
+
+  .modal_container {
+    background-color: #fff;
+    max-width: 400px;
+    height: 400px;
+    margin: auto;
+    padding: 20px 32px;
+    animation: fade-in 800ms ease 400ms backwards;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    .loader_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .loader_text_content {
+        h2 {
+          margin-bottom: 14px;
+        }
+        margin-bottom: 20px;
+      }
+
+      .spinner {
+        border: 0 solid transparent;
+        border-radius: 50%;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        &:before,
+        &:after {
+          content: "";
+          border: 0.2em solid currentcolor;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          animation: loader-07 1s linear infinite;
+          opacity: 0;
+        }
+        &:before {
+          animation-delay: 1s;
+        }
+        &:after {
+          animation-delay: 0.5s;
+        }
+      }
+
+      @keyframes loader-07 {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+    }
+    .result_container {
+      display: flex;
+      height: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+
+      .result_button {
+        all: unset;
+        cursor: pointer;
+        background-color: #3498db;
+        padding: 10px 32px;
+        border-radius: 8px;
+        color: #fff;
+        transition: ease-in-out 0.2s;
+
+        &:hover {
+          background-color: #2980b9;
+        }
+      }
+
+      .result_text_content {
+        text-align: center;
+        h2 {
+          margin-bottom: 14px;
+        }
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
